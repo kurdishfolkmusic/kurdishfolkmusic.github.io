@@ -42,6 +42,22 @@ body {
   color: var(--accent);
 }
 
+/* HERO BANNER IMAGE */
+.hero-banner {
+  width: 100%;
+  margin-bottom: 70px; /* Space between image and the About section */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(30%) sepia(20%); /* Adds a subtle vintage, warm tone to match the site */
+  transition: filter 0.5s ease;
+}
+
 .subtitle {
   font-size: 1.05rem;
   color: var(--text-dim);
