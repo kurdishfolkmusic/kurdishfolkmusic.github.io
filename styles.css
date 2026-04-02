@@ -1,0 +1,133 @@
+:root {
+  --bg-color: #f7f3ed;       /* Soft Creamy Beige */
+  --text-main: #2c2a27;      /* Warm Slate Black */
+  --text-dim: #706b63;
+  --accent: #b08d57;         /* Muted Antique Gold */
+  --border: #e8e2d8;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px 24px;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  letter-spacing: -0.5px;
+  color: #1a1917;
+}
+
+.hero h1 .italic {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent);
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-dim);
+  font-weight: 300;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* TITLES */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Small accent dot under titles */
+h2::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: var(--accent);
+  margin-top: 8px;
+}
+
+/* CONTENT BLOCKS */
+.content-block {
+  margin-bottom: 70px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #444;
+}
+
+/* NEWS */
+.news-item {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-left: 1px solid var(--border);
+}
+
+.date {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* LINKS */
+.email-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid var(--accent);
+  transition: opacity 0.2s;
+}
+
+.email-link:hover {
+  opacity: 0.7;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 120px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.kurdish-quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--text-dim);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2.4rem; }
+  .container { padding: 60px 24px; }
+}
