@@ -42,20 +42,36 @@ body {
   color: var(--accent);
 }
 
-/* HERO BANNER IMAGE */
+/* REFINED IMAGE STYLING */
 .hero-banner {
   width: 100%;
-  margin-bottom: 70px; /* Space between image and the About section */
-  border-radius: 8px;
-  overflow: hidden;
+  max-width: 400px; /* Limits the size so it's not overwhelming */
+  margin: 40px auto 70px auto; /* Centers it and adds breathing room */
+  position: relative;
+  overflow: visible; /* Allows the decorative border to show */
 }
 
 .hero-banner img {
   width: 100%;
   height: auto;
   display: block;
-  filter: grayscale(30%) sepia(20%); /* Adds a subtle vintage, warm tone to match the site */
-  transition: filter 0.5s ease;
+  border-radius: 4px;
+  filter: grayscale(20%) sepia(10%);
+  /* This creates a sophisticated 'floating' frame */
+  box-shadow: 15px 15px 0px var(--border); 
+  transition: all 0.4s ease;
+}
+
+.hero-banner:hover img {
+  transform: translate(-5px, -5px);
+  box-shadow: 20px 20px 0px var(--accent); /* Shifts to gold on hover */
+}
+
+.hero-banner p {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-dim);
 }
 
 .subtitle {
